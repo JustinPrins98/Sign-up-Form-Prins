@@ -5,6 +5,7 @@ Goal of this project.
 
 1. Get comfy with forms.
 2. Using different form validation methods.
+3. Adding CSS reset
 
 Not in this project (yet).
 1. Javascript validation.
