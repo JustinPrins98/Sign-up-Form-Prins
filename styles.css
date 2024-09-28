@@ -1,6 +1,63 @@
-@import url(reset.css);
+@import url(/styles/reset.css);
+@import url(/styles/fontface.css);
+
+
+:root {
+    --window-background-color: #4580c4;
+    --window-background: linear-gradient(to right, #ffffff66, #0000001a, #ffffff33), var(--window-background-color);
+}
 
 body {
     background-image: url(https://images2.alphacoders.com/134/thumb-1920-1349542.png);
     background-size: cover;
+    display: flex;
+    flex-direction: row;
+    font-family: "Frutiger", Arial, sans-serif;
+}
+
+header {
+    width: 40%;
+    background-color: var(--window-background);
+    padding: 1rem;
+}
+
+header section {
+    background-image: url(https://preview.redd.it/frutiger-aero-wallpapers-v0-qvka262urfkc1.png?width=1290&format=png&auto=webp&s=3593b403a430f93e0d5d317c47d96ca83e1cbb7e);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    border-radius: 10px;
+}
+
+header section p,
+header section p a {
+    margin-bottom: 1rem;
+    color: white;
+    font-size: .8rem;
+}
+
+div {
+    margin-top: 10rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 13rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 13rem;
+}
+
+
+.form-container {
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    margin-block: 1rem;
+    margin-right: 1rem;
 }
