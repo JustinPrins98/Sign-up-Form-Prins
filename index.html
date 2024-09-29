@@ -33,13 +33,13 @@
             <section class="form-wrapper">
                 <h2>Let's do this!</h2>
                 <fieldset class="border-none">
-                    <label for="first-name">First name
-                        <input type="text" id="first-name">
+                    <label for="first-name" class="required" aria-label="required"> First name
+                        <input type="text" id="first-name" minlength="1" required>
                     </label>
 
 
-                    <label for="last-name">Last name
-                        <input type="text" id="last-name">
+                    <label for="last-name" class="required" aria-label="required">Last name
+                        <input type="text" id="last-name" minlength="1" required>
                     </label>
                 </fieldset>
 
@@ -55,13 +55,14 @@
                 </fieldset>
 
                 <fieldset class="border-none">
-                    <label for="password">Password
-                        <input type="password" id="password">
+                    <label for="password" class="required" aria-label="required">Password
+                        <input type="password" id="password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required>
                     </label>
 
 
-                    <label for="confirm-password">Confirm password
-                        <input type="password" id="confirm-password">
+                    <label for="confirm-password" class="required" aria-label="required">Confirm password
+                        <input type="password" id="confirm-password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+                            required>
                     </label>
                 </fieldset>
             </section>
