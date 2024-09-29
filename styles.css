@@ -17,7 +17,7 @@ body {
 }
 
 header {
-    width: 45%;
+    width: 40%;
     background-color: var(--window-background);
     padding: 1rem;
 }
@@ -106,4 +106,12 @@ fieldset {
     gap: 2rem;
 }
 
-/* Inside the form */
+form button {
+    margin-inline: calc((0% + 8vw) + 0% + 8vw);
+    margin-top: 2rem;
+}
+
+form p {
+    margin-inline: calc((0% + 8vw) + 0% + 8vw);
+    margin-top: 1rem;
+}
