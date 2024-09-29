@@ -12,3 +12,5 @@ Goal of this project.
 Not in this project (yet).
 1. Javascript validation.
 2. Responsive and accecsible design.
+
+Well the responsivness is really terrible on this project so don't even test it.

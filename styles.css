@@ -169,9 +169,12 @@ form p {
 }
 
 /* input fields */
+/* //////////// */
+/* Experimental */
 
 input {
     border-radius: 6px;
+    width: 17rem;
 }
 
 
@@ -181,4 +184,34 @@ input:user-valid {
 
 input:user-invalid {
     border: red 2px solid;
+}
+
+input:focus {
+    border: rgb(102, 102, 246) 2px solid;
+}
+
+output {
+    display: none;
+    color: red;
+    margin-left: 8rem;
+}
+
+form:has(input[type="text"]:user-invalid) .name-invalid-message {
+    display: inline;
+    color: red;
+}
+
+form:has(input[type="email"]:user-invalid) .email-invalid-message {
+    display: inline;
+    color: red;
+}
+
+form:has(input[type="tel"]:user-invalid) .tel-invalid-message {
+    display: inline;
+    color: red;
+}
+
+form:has(input[type="password"]:user-invalid) .ps-invalid-message {
+    display: inline;
+    color: red;
 }
