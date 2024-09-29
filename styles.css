@@ -2,10 +2,13 @@
 @import url(/styles/fontface.css);
 
 
+
 :root {
     --window-background-color: #4580c4;
     --window-background: linear-gradient(to right, #ffffff66, #0000001a, #ffffff33), var(--window-background-color);
     --frutiger-green: #ffffff;
+    --blackblue: rgb(0, 62, 86);
+    ;
 }
 
 body {
@@ -17,7 +20,7 @@ body {
 }
 
 a {
-    color: rgb(0, 62, 86);
+    color: var(--blackblue);
     font-weight: 700;
     text-decoration: none;
 }
@@ -119,9 +122,45 @@ fieldset {
     gap: 4rem;
 }
 
-form button {
+
+
+
+
+.frutiger-aero-button {
+    background: linear-gradient(145deg, #6AFAC4, #FFFFFF 60%, #33FF99);
+    /* Light blue, white, and sky blue gradient */
+    border: 2px solid #FFFFFFAA;
+    /* Semi-transparent white border */
+    border-radius: 15px;
+    color: var(--blackblue);
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 1rem 2rem;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3), inset 2px 2px 5px rgba(255, 255, 255, 0.3);
+    /* Soft shadows */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    /* Text shadow for a glossy look */
+    cursor: pointer;
+    transition: all 0.3s ease;
     margin-inline: calc((0% + 8vw) + 0% + 8vw);
     margin-top: 2rem;
+}
+
+.frutiger-aero-button:hover {
+    background: linear-gradient(145deg, #33FF99, #6AFAC4 60%, #FFFFFF);
+    /* Reversed gradient on hover */
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5), inset 3px 3px 6px rgba(255, 255, 255, 0.5);
+    /* Enhanced shadows */
+    transform: translateY(-3px);
+    /* Slight movement effect on hover */
+}
+
+.frutiger-aero-button:active {
+    background: linear-gradient(145deg, #00FF99, #5CFFC8 60%, #FFFFFF);
+    /* Darker gradient on click */
+    transform: translateY(1px);
+    /* Button pressed effect */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2), inset 1px 1px 3px rgba(255, 255, 255, 0.2);
 }
 
 form p {
