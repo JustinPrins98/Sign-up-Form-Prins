@@ -5,6 +5,7 @@
 :root {
     --window-background-color: #4580c4;
     --window-background: linear-gradient(to right, #ffffff66, #0000001a, #ffffff33), var(--window-background-color);
+    --frutiger-green: #ffffff;
 }
 
 body {
@@ -16,7 +17,7 @@ body {
 }
 
 header {
-    width: 40%;
+    width: 45%;
     background-color: var(--window-background);
     padding: 1rem;
 }
@@ -39,7 +40,7 @@ header section p a {
     font-size: .8rem;
 }
 
-div {
+header section div {
     margin-top: 10rem;
     background-color: rgba(255, 255, 255, 0.1);
     height: 13rem;
@@ -53,11 +54,56 @@ img {
     width: 13rem;
 }
 
+/* form area */
 
 .form-container {
     border-radius: 20px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.1);
     width: 100%;
     margin-block: 1rem;
     margin-right: 1rem;
 }
+
+h1 {
+    color: var(--frutiger-green);
+    padding-inline: calc(0% + 8vw);
+    padding-bottom: 1rem;
+}
+
+.form-container div {
+    padding-top: 7rem;
+    padding-inline: calc(0% + 8vw);
+}
+
+.form-wrapper {
+    padding-block: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    width: 80%;
+    margin-left: calc(0% + 8vw);
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+h2 {
+    padding-inline: calc(0% + 8vw);
+}
+
+
+fieldset {
+    display: flex;
+    flex-direction: row;
+    padding-inline: calc(0% + 8vw);
+}
+
+.border-none {
+    border: none;
+    gap: 2rem;
+}
+
+/* Inside the form */
