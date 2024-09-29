@@ -4,8 +4,6 @@
 
 
 :root {
-    --window-background-color: #4580c4;
-    --window-background: linear-gradient(to right, #ffffff66, #0000001a, #ffffff33), var(--window-background-color);
     --frutiger-green: #ffffff;
     --blackblue: rgb(0, 62, 86);
     ;
@@ -15,23 +13,11 @@ body {
     background-image: url(https://images2.alphacoders.com/134/thumb-1920-1349542.png);
     background-size: cover;
     display: flex;
-    flex-direction: row;
     font-family: "Frutiger", Arial, sans-serif;
 }
 
-a {
-    color: var(--blackblue);
-    font-weight: 700;
-    text-decoration: none;
-}
-
-form a {
-    color: white;
-}
-
 header {
-    width: 40%;
-    background-color: var(--window-background);
+    width: 40rem;
     padding: 1rem;
 }
 
@@ -46,6 +32,15 @@ header section {
     border-radius: 10px;
 }
 
+header section div {
+    margin-top: 10rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 header section p,
 header section p a {
     margin-bottom: 1rem;
@@ -53,19 +48,25 @@ header section p a {
     font-size: .8rem;
 }
 
-header section div {
-    margin-top: 10rem;
-    background-color: rgba(255, 255, 255, 0.1);
-    height: 13rem;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 img {
     width: 13rem;
 }
+
+
+
+form a {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* form area */
 
@@ -78,20 +79,26 @@ img {
     margin-right: 1rem;
 }
 
+.form-container div {
+    padding-top: 7rem;
+    padding-inline: calc(0% + 8vw);
+}
+
 h1 {
     color: var(--frutiger-green);
     padding-inline: calc(0% + 8vw);
     padding-bottom: 1rem;
 }
 
-.form-container div {
-    padding-top: 7rem;
-    padding-inline: calc(0% + 8vw);
+a {
+    color: var(--blackblue);
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .form-wrapper {
     padding-block: 2rem;
-    background: rgba(255, 255, 255, 0, 3);
     background: linear-gradient(180deg,
             rgba(255, 255, 255, 0.3) 0%,
             rgba(241, 244, 250, 0.3) 2%,
@@ -107,21 +114,20 @@ h1 {
     margin-left: calc(0% + 8vw);
 }
 
-label {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-}
-
 h2 {
     padding-inline: calc(0% + 8vw);
 }
-
 
 fieldset {
     display: flex;
     flex-direction: row;
     padding-inline: calc(0% + 8vw);
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
 }
 
 .border-none {
@@ -130,23 +136,15 @@ fieldset {
 }
 
 
-
-
-
 .frutiger-aero-button {
     background: linear-gradient(145deg, #6AFAC4, #FFFFFF 60%, #33FF99);
-    /* Light blue, white, and sky blue gradient */
     border: 2px solid #FFFFFFAA;
-    /* Semi-transparent white border */
     border-radius: 15px;
     color: var(--blackblue);
     font-size: 1.2rem;
     font-weight: 500;
     padding: 1rem 2rem;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3), inset 2px 2px 5px rgba(255, 255, 255, 0.3);
-    /* Soft shadows */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-    /* Text shadow for a glossy look */
     cursor: pointer;
     transition: all 0.3s ease;
     margin-inline: calc((0% + 8vw) + 0% + 8vw);
@@ -155,18 +153,13 @@ fieldset {
 
 .frutiger-aero-button:hover {
     background: linear-gradient(145deg, #33FF99, #6AFAC4 60%, #FFFFFF);
-    /* Reversed gradient on hover */
     box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5), inset 3px 3px 6px rgba(255, 255, 255, 0.5);
-    /* Enhanced shadows */
     transform: translateY(-3px);
-    /* Slight movement effect on hover */
 }
 
 .frutiger-aero-button:active {
     background: linear-gradient(145deg, #00FF99, #5CFFC8 60%, #FFFFFF);
-    /* Darker gradient on click */
     transform: translateY(1px);
-    /* Button pressed effect */
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2), inset 1px 1px 3px rgba(255, 255, 255, 0.2);
 }
 
@@ -189,4 +182,3 @@ input:user-valid {
 input:user-invalid {
     border: red 2px solid;
 }
-
