@@ -215,3 +215,50 @@ form:has(input[type="password"]:user-invalid) .ps-invalid-message {
     display: inline;
     color: red;
 }
+
+
+@media (max-width: 768px) {
+    body {
+        display: block;
+    }
+
+    header {
+        margin: auto;
+        width: 100%;
+    }
+
+    header section {
+        background-size: 100%;
+        background-position: 0;
+        background-repeat: no-repeat;
+    }
+
+    header section div {
+        margin-top: 2rem;
+    }
+
+    .form-container div {
+        padding-top: 1rem;
+    }
+
+    .form-wrapper,
+    h1 {
+        margin: auto;
+    }
+
+    fieldset {
+        display: block;
+    }
+
+    form p {
+        margin: 0;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    input {
+        width: 100%;
+    }
+
+
+}
